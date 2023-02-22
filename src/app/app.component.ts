@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'queteOutput';
+
+  onomatopia : string = ""
+
+  afficherOnomatopia(event: string): void {
+    this.onomatopia = event; 
+  }
 }
