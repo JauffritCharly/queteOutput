@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'queteOutput';
 
-  onomatopia : string = ""
+  public onomatopiaList : string[] = [];
 
   afficherOnomatopia(event: string): void {
-    this.onomatopia = event; 
+    this.onomatopiaList.push(event); 
   }
 }

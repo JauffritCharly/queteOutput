@@ -1,2 +1,4 @@
-<p>{{onomatopia}}</p>
+<div *ngFor="let ono of onomatopiaList">
+    <p>{{ono}}</p>
+</div>
 <app-CreateOnomatopia (sendOnomatopiaToParent)="afficherOnomatopia($event)"></app-CreateOnomatopia>
